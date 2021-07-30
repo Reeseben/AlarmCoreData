@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B568235C26B341950097C099 /* Alarm+Convienience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568235B26B341950097C099 /* Alarm+Convienience.swift */; };
+		B568235E26B342C00097C099 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568235D26B342C00097C099 /* CoreDataStack.swift */; };
+		B568236326B3459E0097C099 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568236226B3459E0097C099 /* AlarmController.swift */; };
+		B568236526B34AAE0097C099 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568236426B34AAE0097C099 /* AlarmTableViewCell.swift */; };
+		B568236826B34E340097C099 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568236726B34E340097C099 /* DateFormatter.swift */; };
+		B568236A26B3522A0097C099 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568236926B3522A0097C099 /* AlarmListTableViewController.swift */; };
+		B568236E26B357970097C099 /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568236D26B357970097C099 /* AlarmDetailTableViewController.swift */; };
+		B568237226B36D6E0097C099 /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568237126B36D6E0097C099 /* AlarmScheduler.swift */; };
 		FBF66FDA25B755D40038F7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66FD925B755D40038F7AC /* AppDelegate.swift */; };
 		FBF66FDC25B755D40038F7AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */; };
 		FBF66FE125B755D40038F7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF66FDF25B755D40038F7AC /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B568235B26B341950097C099 /* Alarm+Convienience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm+Convienience.swift"; sourceTree = "<group>"; };
+		B568235D26B342C00097C099 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B568236226B3459E0097C099 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
+		B568236426B34AAE0097C099 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		B568236726B34E340097C099 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		B568236926B3522A0097C099 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		B568236D26B357970097C099 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		B568237126B36D6E0097C099 /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
 		FBF66FD625B755D40038F7AC /* AlarmCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF66FD925B755D40038F7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B568235F26B345200097C099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B568236126B3452D0097C099 /* ModelControllers */,
+				B568236026B345280097C099 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B568236026B345280097C099 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B568236926B3522A0097C099 /* AlarmListTableViewController.swift */,
+				B568236D26B357970097C099 /* AlarmDetailTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B568236126B3452D0097C099 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B568236226B3459E0097C099 /* AlarmController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B568236626B34E190097C099 /* Helpers and Extions */ = {
+			isa = PBXGroup;
+			children = (
+				B568236726B34E340097C099 /* DateFormatter.swift */,
+				B568237126B36D6E0097C099 /* AlarmScheduler.swift */,
+			);
+			path = "Helpers and Extions";
+			sourceTree = "<group>";
+		};
+		B568236F26B362F40097C099 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B568237026B363010097C099 /* CustomCells */,
+				FBF66FF425B7562C0038F7AC /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B568237026B363010097C099 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B568236426B34AAE0097C099 /* AlarmTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		FBF66FCD25B755D40038F7AC = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +125,15 @@
 			isa = PBXGroup;
 			children = (
 				FBF66FF525B756350038F7AC /* Model */,
-				FBF66FF225B7561B0038F7AC /* Supporting Files */,
-				FBF66FF425B7562C0038F7AC /* Storyboards */,
+				B568235F26B345200097C099 /* Controllers */,
+				B568236F26B362F40097C099 /* Views */,
+				B568236626B34E190097C099 /* Helpers and Extions */,
+				FBF66FF225B7561B0038F7AC /* Resources */,
 			);
 			path = AlarmCoreData;
 			sourceTree = "<group>";
 		};
-		FBF66FF225B7561B0038F7AC /* Supporting Files */ = {
+		FBF66FF225B7561B0038F7AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				FBF66FD925B755D40038F7AC /* AppDelegate.swift */,
@@ -71,7 +141,7 @@
 				FBF66FE525B755D60038F7AC /* Assets.xcassets */,
 				FBF66FEA25B755D60038F7AC /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FBF66FF425B7562C0038F7AC /* Storyboards */ = {
@@ -87,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				FBF66FE225B755D40038F7AC /* AlarmCoreData.xcdatamodeld */,
+				B568235B26B341950097C099 /* Alarm+Convienience.swift */,
+				B568235D26B342C00097C099 /* CoreDataStack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,9 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568236826B34E340097C099 /* DateFormatter.swift in Sources */,
+				B568235E26B342C00097C099 /* CoreDataStack.swift in Sources */,
 				FBF66FDA25B755D40038F7AC /* AppDelegate.swift in Sources */,
+				B568235C26B341950097C099 /* Alarm+Convienience.swift in Sources */,
 				FBF66FE425B755D40038F7AC /* AlarmCoreData.xcdatamodeld in Sources */,
+				B568237226B36D6E0097C099 /* AlarmScheduler.swift in Sources */,
 				FBF66FDC25B755D40038F7AC /* SceneDelegate.swift in Sources */,
+				B568236526B34AAE0097C099 /* AlarmTableViewCell.swift in Sources */,
+				B568236A26B3522A0097C099 /* AlarmListTableViewController.swift in Sources */,
+				B568236E26B357970097C099 /* AlarmDetailTableViewController.swift in Sources */,
+				B568236326B3459E0097C099 /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = "AlarmCoreData/Supporting Files/Info.plist";
+				INFOPLIST_FILE = AlarmCoreData/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = "AlarmCoreData/Supporting Files/Info.plist";
+				INFOPLIST_FILE = AlarmCoreData/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
